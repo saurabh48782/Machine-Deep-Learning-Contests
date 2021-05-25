@@ -2,7 +2,7 @@
 
 This is my approach and solution to  **HackerEarth's** **[Carniwal Wars Predict the Price Challenge](https://www.hackerearth.com/problem/machine-learning/predict-the-price-5-fe7f8735/)**
 
-This approach helped me to get a score of **90.24** and I was ranked **29th (out of 2300+ participants)** on the global leaderboard at the end of the contest.
+This approach helped me to get a score of **90.24** and I was ranked **20th (out of 2300+ participants)** on the global leaderboard at the end of the contest.
 
 Machine Learning algorithms used:
 **1. Gradient Boost Regression**
