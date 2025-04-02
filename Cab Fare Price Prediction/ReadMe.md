@@ -5,3 +5,6 @@ This is my approach and solution to  **Dockship's** **[Cab Fare Price Prediction
 This approach has helped me to get RMSE score of **1.63672** and I got ranked at **4th** on the global leaderboard at the end of the challenge.
 
 -> **Cab Fare.ipynb** is the notebook which contains my source code.
+
+**Final Leaderboard**
+![Dockship's Cab Fare Prediction](https://github.com/user-attachments/assets/fbf31f56-0ee0-4a85-8f03-95268a21421d)
