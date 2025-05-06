@@ -9,3 +9,5 @@ Machine Learning algorithms used: **CatBoost Regressor**
 - best.ipynb is the notebook which contains my source code.
 - best.csv is the final prediction on the test set.
 - Approach.txt is the text file that contains my approach.
+
+![Leaderboard](https://github.com/user-attachments/assets/813d3ce1-5c4e-44ff-9cb5-17642b3f46f6)
