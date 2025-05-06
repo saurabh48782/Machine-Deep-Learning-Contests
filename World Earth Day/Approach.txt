@@ -1,0 +1,55 @@
+**Solution Approach: HackerEarth Machine Learning challenge: Earth Day**
+
+**1. Data Preprocessing & Cleaning**
+
+* **Standardization**: All column names were converted to lowercase for uniformity.
+* **ID Handling**: The `id` column was dropped from both training and test datasets but preserved from the test set for final submission.
+* **Data Type Corrections**:
+
+  * Converted `household_size` and `house_area_sqft` to numeric, coercing errors to NaNs.
+  * Invalid entries (e.g., extremely high or negative values) were handled or removed.
+* **Missing and Invalid Data**:
+
+  * Rows with invalid or non-sensible values (e.g., negative energy usage or water consumption) were filtered out.
+  * Missing categorical flags (`recycles_regularly`, etc.) were filled with a placeholder value (-1), then cast to string.
+* **Capping & Imputations**:
+
+  * `home_insulation_quality` values greater than 7 were capped.
+  * For the test set, negative or missing values were replaced using global means or medians from the training set.
+
+**2. Feature Engineering**
+
+* **Categorical Encoding**:
+  Categorical features were explicitly converted to the "category" datatype to leverage CatBoost's native handling of categorical variables.
+* **Log Transformation**:
+  The target variable `carbon_footprint` was log-transformed using `np.log1p` to reduce skewness and improve model stability.
+
+
+**3. Model Selection & Training**
+
+* **Model**: CatBoostRegressor — chosen for its strong performance on tabular data and built-in categorical handling.
+* **Validation**:
+  10-fold cross-validation using `KFold` to ensure robust generalization.
+* **Evaluation Metrics**:
+  RMSE and R² were computed for each fold. Final performance was reported as the mean of all folds:
+
+  ```
+  RMSE: ~[actual output from script]
+  R² Score: ~[actual output from script]
+  ```
+
+**4. Feature Importance Analysis**
+
+* Post-training, top features influencing the carbon footprint were visualized using CatBoost's feature importance scores.
+
+**5. Prediction and Submission**
+
+* Final predictions on the test set were averaged across folds and inverse-transformed using `np.expm1`.
+* Results were saved in `best.csv` in the required format.
+
+**6. Key Takeaways**
+
+* Proper data cleaning and thoughtful imputation significantly improved model robustness.
+* Log-transforming a skewed target variable helped stabilize training.
+* CatBoost was effective in handling mixed-type data and avoided the need for one-hot encoding.
+* K-Fold validation was critical for reducing overfitting and gaining realistic performance estimates.
