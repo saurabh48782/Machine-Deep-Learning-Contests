@@ -12,3 +12,5 @@ Machine Learning algorithms used: **CatBoost Regressor**
 **Note**: I'm not adding the obvious EDA steps in the code as they can be easily seen from the `profiling_report.html`.
 
 ![Leaderboard](https://github.com/user-attachments/assets/270b3769-f8da-46e5-b6da-180d8d4ffee5)
+
+![Certificate](https://github.com/user-attachments/assets/50d2a26d-b5d7-4dfd-b932-d271684bbd87)
