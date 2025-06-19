@@ -11,3 +11,4 @@ Machine Learning algorithms used: **CatBoost Regressor**
 - Approach.txt is the text file that contains my approach.
 
 ![Leaderboard](https://github.com/user-attachments/assets/813d3ce1-5c4e-44ff-9cb5-17642b3f46f6)
+![Certificate](https://github.com/user-attachments/assets/ccdc970d-4164-428e-afbb-123a784fed8b)
